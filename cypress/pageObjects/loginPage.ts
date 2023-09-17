@@ -11,7 +11,7 @@ class loginPage{
 
     login(userName:string, password:string){
         this.elements.userName().type(userName);
-        this.elements.password().type(userName);
+        this.elements.password().type(password);
         this.elements.button().click();
     }
 
