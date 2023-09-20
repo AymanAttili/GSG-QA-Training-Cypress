@@ -1,4 +1,4 @@
-import loginPage from "../../pageObjects/loginPage";
+import loginPage from "../../pageObjects/mainPages/loginPage";
 
 const myLoginPage = new loginPage();
 describe("Sign in", () => {

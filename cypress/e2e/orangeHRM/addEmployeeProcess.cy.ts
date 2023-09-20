@@ -1,12 +1,12 @@
-import PIMPage from "../../pageObjects/PIMPage";
-import addEmployeePage from "../../pageObjects/addEmployeePage";
-import editEmployeeNavigation from "../../pageObjects/editEmployeeNavigation";
+import PIMPage from "../../pageObjects/mainPages/PIMPage";
+import addEmployeePage from "../../pageObjects/mainPages/addEmployeePage";
+import editEmployeeNavigation from "../../pageObjects/subPages/editEmployeeNavigation";
 import employeeDetails_Job from "../../pageObjects/employeeDetails_Job";
 import employeeDetails_Personal from "../../pageObjects/employeeDetails_Personal";
 import employeeDetails_ReportTo from "../../pageObjects/employeeDetails_ReportTo";
-import loginPage from "../../pageObjects/loginPage";
-import sidebar from "../../pageObjects/sidebar";
-import table from "../../pageObjects/table";
+import loginPage from "../../pageObjects/mainPages/loginPage";
+import sidebar from "../../pageObjects/subPages/sidebar";
+import table from "../../pageObjects/objects/table";
 
 const mySideBar: sidebar = new sidebar();
 const myLoginPage = new loginPage();
@@ -20,9 +20,7 @@ const myTable: table = new table();
 describe('add Employee process', () => {
     beforeEach(() => {
         // visiting orangeHRM website
-        cy.visit(
-            "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-        );
+        cy.visit("web/index.php/auth/login");
         
         // login
         myLoginPage.login("Admin", "admin123");
@@ -71,6 +69,8 @@ describe('add Employee process', () => {
             // mySideBar.getPage('PIM').click();
             // myTable.create(['Id', 'First (& Middle) Name', 'Last Name', 'Job Title', 'Employment Status', 'Sub Unit', 'Supervisor', 'Actions']);
 
+
+        
         })
     })
 
