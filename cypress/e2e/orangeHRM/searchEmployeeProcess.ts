@@ -15,7 +15,6 @@ describe('add Employee process', () => {
     })
 
     it('Employee Search form testing using UI', () => {
-
         mySideBar.getPage('PIM').click();
         myEmployeeSearch.searchBy([{key: 'employeeId', value:'123'},{key: 'employeeName', value: 'Ayman'}]);
     })

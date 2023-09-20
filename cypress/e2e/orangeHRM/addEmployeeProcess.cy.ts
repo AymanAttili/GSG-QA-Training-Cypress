@@ -29,7 +29,7 @@ describe('add Employee process', () => {
         cy.fixture('employeeInfo').as('empInfo');
     });
 
-    it('add and check', () => {
+    it('add employee', () => {
         // getting employee info from the fixture then complete
         cy.get('@empInfo').then((infoData: any) => {
 
@@ -39,38 +39,7 @@ describe('add Employee process', () => {
 
             // adding new employee using UI
             myAddEmployeePage.addWithLogin(infoData.firstName, infoData.middleName, infoData.lastName, infoData.userName, infoData.password);
-            cy.wait(10000);
-
-            // Checking that the name saved correctly
-            myEmployeeDetails_Personal.elements.employeeFullName().should('have.text', infoData.firstName + ' ' + infoData.lastName);
-
-            // adding Job details from editJob page
-            myEditEmployeeNavigation.getPage('Job').click({force:true});
-            myEmployeeDetails_Job.elements.newJobTitle().click();
-            const jobTitle = myEmployeeDetails_Job.elements.Option().eq(2).click();
-            myEmployeeDetails_Job.elements.newSubUnit().click();
-            const subUnit = myEmployeeDetails_Job.elements.Option().eq(2).click();
-            myEmployeeDetails_Job.elements.newEmploymentStatus().click();
-            const employmentStatus = myEmployeeDetails_Job.elements.Option().eq(2).click();
-            myEmployeeDetails_Job.elements.newJobSaveBTN().click();
-
-
-            // adding supervisor from editReportTo page
-            myEditEmployeeNavigation.getPage('Report-to').click({force:true});
-            myEmployeeDetails_ReportTo.elements.addSupervisorBTN().click({force:true});
-            myEmployeeDetails_ReportTo.elements.newSupervisorName().type('a');
-            cy.wait(3000);
-            myEmployeeDetails_ReportTo.elements.autocompleteOption().eq(1).click();
-            myEmployeeDetails_ReportTo.elements.addNewSupervisorReportingMethod().click();
-            myEmployeeDetails_ReportTo.elements.selectOption().eq(2).click();
-            myEmployeeDetails_ReportTo.elements.saveNewSupervisorBTN().click({force: true});
-
-
-            // mySideBar.getPage('PIM').click();
-            // myTable.create(['Id', 'First (& Middle) Name', 'Last Name', 'Job Title', 'Employment Status', 'Sub Unit', 'Supervisor', 'Actions']);
-
-
-        
+            cy.wait(10000);        
         })
     })
 

@@ -17,7 +17,7 @@ class employeeSearch{
             }
         }
         
-        this.elements.searchBTN().click();
+        this.elements.searchBTN().click({force: true});
     }
 }
 

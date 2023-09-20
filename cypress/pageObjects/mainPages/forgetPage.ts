@@ -9,7 +9,7 @@ class forgetPage{
     }
 
     typeUserName(name:string){
-        this.elements.userName().type(name);
+        this.elements.userName().type(name).should('have.value', name);;
     }
 
     cancel(){

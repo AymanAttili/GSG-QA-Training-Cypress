@@ -5,6 +5,7 @@ class addEmployeePage{
         firstName: () => cy.get('[placeholder = "First Name"]'),
         middleName: () => cy.get('[placeholder = "Middle Name"]'),
         lastName: () => cy.get('[placeholder = "Last Name"]'),
+        employeeId: () => cy.get(':nth-child(1) > .oxd-grid-2 > .oxd-grid-item > .oxd-input-group > :nth-child(2) > .oxd-input'),
         loginDetailsSwitch: () => cy.get('.oxd-switch-input'),
         userName: () => cy.get(':nth-child(4) > .oxd-grid-2 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input'),
         password: () => cy.get('.user-password-cell > .oxd-input-group > :nth-child(2) > .oxd-input'),
