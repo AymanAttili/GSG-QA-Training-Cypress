@@ -1,0 +1,56 @@
+{
+    "testcases": [
+        {
+            "username":"Admin",
+            "password":"admin123",
+            "page":"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"
+        },
+        {
+            "username":"Admin",
+            "password":"admin122",
+            "message": "Invalid credentials"
+        },
+        {
+            "username":"3llawi",
+            "password":"admin123",
+            "message": "Invalid credentials"
+        },
+        {
+            "username":"Admin",
+            "password":"",
+            "passwordError": "Required"
+        },
+        {
+            "username":"",
+            "password":"admin123",
+            "usernameError": "Required"
+        },
+        {
+            "username":"",
+            "password":"",
+            "passwordError": "Required",
+            "inputError": "Required"
+        },
+        {
+            "username":"admin",
+            "password":"admin123",
+            "page":"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"
+        },
+        {
+            "username":"Admin",
+            "password":"Admin123",
+            "message": "Invalid credentials"
+        },
+        {
+            "username":" Admin",
+            "password":"Admin123",
+            "message": "Invalid credentials"
+        }
+        ,
+        {
+            "username":"Admin ",
+            "password":"Admin123",
+            "message": "Invalid credentials"
+        }
+    ]
+}
