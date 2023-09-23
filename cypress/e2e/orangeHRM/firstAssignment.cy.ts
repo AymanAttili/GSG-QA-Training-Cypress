@@ -1,14 +1,13 @@
-import { max } from "cypress/types/lodash";
-import loginPage from "../../pageObjects/mainPages/loginPage";
-import sidebar from "../../pageObjects/subPages/sidebar";
-import PIMPage from "../../pageObjects/mainPages/PIMPage";
-import addEmployeePage from "../../pageObjects/mainPages/addEmployeePage";
-import employeeDetails_Personal from "../../pageObjects/employeeDetails_Personal";
-import employeeDetails_Job from "../../pageObjects/employeeDetails_Job";
-import employeeDetails_ReportTo from "../../pageObjects/employeeDetails_ReportTo";
-import editEmployeeNavigation from "../../pageObjects/subPages/editEmployeeNavigation";
-import employeeSearch from "../../pageObjects/subPages/employeeSearch";
-import table from "../../pageObjects/objects/table";
+import loginPage from "../../support/pageObjects/mainPages/loginPage";
+import sidebar from "../../support/pageObjects/subPages/sidebar";
+import PIMPage from "../../support/pageObjects/mainPages/PIMPage";
+import addEmployeePage from "../../support/pageObjects/mainPages/addEmployeePage";
+import employeeDetails_Personal from "../../support/pageObjects/employeeDetails_Personal";
+import employeeDetails_Job from "../../support/pageObjects/employeeDetails_Job";
+import employeeDetails_ReportTo from "../../support/pageObjects/employeeDetails_ReportTo";
+import editEmployeeNavigation from "../../support/pageObjects/subPages/editEmployeeNavigation";
+import employeeSearch from "../../support/pageObjects/subPages/employeeSearch";
+import table from "../../support/pageObjects/objects/table";
 
 const myEmployeeDetails_Personal: employeeDetails_Personal = new employeeDetails_Personal();
 const myEmployeeDetails_Job: employeeDetails_Job = new employeeDetails_Job();

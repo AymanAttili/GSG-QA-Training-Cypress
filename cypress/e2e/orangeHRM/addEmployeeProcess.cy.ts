@@ -1,12 +1,12 @@
-import PIMPage from "../../pageObjects/mainPages/PIMPage";
-import addEmployeePage from "../../pageObjects/mainPages/addEmployeePage";
-import editEmployeeNavigation from "../../pageObjects/subPages/editEmployeeNavigation";
-import employeeDetails_Job from "../../pageObjects/employeeDetails_Job";
-import employeeDetails_Personal from "../../pageObjects/employeeDetails_Personal";
-import employeeDetails_ReportTo from "../../pageObjects/employeeDetails_ReportTo";
-import loginPage from "../../pageObjects/mainPages/loginPage";
-import sidebar from "../../pageObjects/subPages/sidebar";
-import table from "../../pageObjects/objects/table";
+import PIMPage from "../../support/pageObjects/mainPages/PIMPage";
+import addEmployeePage from "../../support/pageObjects/mainPages/addEmployeePage";
+import editEmployeeNavigation from "../../support/pageObjects/subPages/editEmployeeNavigation";
+import employeeDetails_Job from "../../support/pageObjects/employeeDetails_Job";
+import employeeDetails_Personal from "../../support/pageObjects/employeeDetails_Personal";
+import employeeDetails_ReportTo from "../../support/pageObjects/employeeDetails_ReportTo";
+import loginPage from "../../support/pageObjects/mainPages/loginPage";
+import sidebar from "../../support/pageObjects/subPages/sidebar";
+import table from "../../support/pageObjects/objects/table";
 
 const mySideBar: sidebar = new sidebar();
 const myLoginPage = new loginPage();

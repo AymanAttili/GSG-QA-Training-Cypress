@@ -1,4 +1,4 @@
-import keyVal from "../../e2e/interfaces/keyVal";
+import keyVal from "../../../e2e/interfaces/keyVal";
 
 class employeeSearch{
     elements = {
