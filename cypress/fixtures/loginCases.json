@@ -3,59 +3,70 @@
         {
             "username":"Admin",
             "password":"admin123",
-            "page":"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"
+            "page":"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+            "description":"Login using valid username and correct password"
         },
         {
             "username":"Admin",
             "password":"admin122",
-            "message": "Invalid credentials"
+            "message": "Invalid credentials",
+            "description":"Login using valid username and incorrect password"
         },
         {
             "username":"3llawi",
             "password":"admin123",
-            "message": "Invalid credentials"
+            "message": "Invalid credentials",
+            "description":"Login using invalid username and valid password"
         },
         {
             "username":"3llawi",
             "password":"admin122",
-            "message": "Invalid credentials"
+            "message": "Invalid credentials",
+            "description":"Login using invalid username and invalid password"
         },
         {
             "username":"",
             "password":"admin123",
-            "usernameError": "Required"
+            "usernameError": "Required",
+            "description":"Login using empty username and valid/invalid password"
         },
         {
             "username":"Admin",
             "password":"",
-            "passwordError": "Required"
+            "passwordError": "Required",
+            "description":"Login using valid/invalid username and empty password"
         },
         {
             "username":"",
             "password":"",
             "passwordError": "Required",
-            "usernameError": "Required"
+            "usernameError": "Required",
+            "description":"Login using empty username and empty password"
         },
         {
             "username":"admin",
             "password":"admin123",
-            "page":"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"
+            "page":"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+            "description":"Login using case sensetive valid username"
         },
         {
             "username":"Admin",
             "password":"Admin123",
-            "message": "Invalid credentials"
+            "message": "Invalid credentials",
+            "description":"Login using case sensetive password"
         },
         {
             "username":" Admin",
             "password":"Admin123",
-            "message": "Invalid credentials"
+            "message": "Invalid credentials",
+            "description":"Login using pre-extra spaces in a valid username"
         }
         ,
         {
             "username":"Admin ",
             "password":"Admin123",
-            "message": "Invalid credentials"
+            "message": "Invalid credentials",
+            "description":"Login post-extra spaces in a valid username"
         }
     ]
 }
