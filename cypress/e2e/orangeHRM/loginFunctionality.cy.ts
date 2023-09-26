@@ -1,4 +1,5 @@
 import loginPage from "../../support/pageObjects/mainPages/loginPage";
+import '@shelex/cypress-allure-plugin';
 
 const myLoginPage: loginPage = new loginPage();
 describe('login home page',() => {

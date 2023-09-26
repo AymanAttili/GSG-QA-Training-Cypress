@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-26T12:49:15.268Z",
+    "end": "2023-09-26T12:49:21.691Z",
+    "duration": 6423,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "96bb5baf-03b0-4d1f-b44b-a23af0cd9bb1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\orangeHRM\\loginFunctionality.cy.ts",
+      "file": "cypress\\e2e\\orangeHRM\\loginFunctionality.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0c4564b0-6275-4a9d-bf2d-1b20358d184b",
+          "title": "login home page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login using valid username and correct password",
+              "fullTitle": "login home page Login using valid username and correct password",
+              "timedOut": null,
+              "duration": 6327,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"@loginCases\").then((casesData) => {\n    let testcase = casesData.testcases[0];\n    myLoginPage.login(testcase.username, testcase.password);\n    cy.url().should('eq', testcase.page);\n});",
+              "err": {},
+              "uuid": "7e0f33c3-5840-4539-9cd8-cc91a9c96a24",
+              "parentUUID": "0c4564b0-6275-4a9d-bf2d-1b20358d184b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7e0f33c3-5840-4539-9cd8-cc91a9c96a24"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6327,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "mochaFile": "cypress-results/cypress-report.xml",
+        "reportDir": "cypress/results/mochawesome",
+        "overWrite": false,
+        "html": false,
+        "json": true,
+        "toConsole": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

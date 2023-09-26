@@ -1,0 +1,23 @@
+{
+  "name": "orangehrm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "test",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "3llawi": "npx cypress run --browser chrome --spec cypress/e2e/orangeHRM/loginFunctionality.cy.ts --env allure=true && npm run allure:report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "allure-commandline": "^2.24.0",
+    "cypress": "12.14.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "7.0.1",
+    "mochawesome-merge": "4.1.0",
+    "mochawesome-report-generator": "6.0.1",
+    "typescript": "5.2.2"
+  }
+}
