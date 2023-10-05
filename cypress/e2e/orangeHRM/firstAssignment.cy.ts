@@ -38,7 +38,7 @@ describe("Assignment 4", () => {
             mySideBar.getPage('PIM').click();
             
             myPIMPAge.elements.addBTN().click();
-            myAddEmployeePage.elements.employeeId().then(($el) => {
+            myAddEmployeePage.elements.employeeId().then(($el:any) => {
                 infoData.employeeId = $el[0]._value;
                 cy.request({
                     method: "POST",

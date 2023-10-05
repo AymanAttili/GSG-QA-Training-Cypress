@@ -25,7 +25,7 @@ describe("Sign in", () => {
         });
     });
 
-    it.only("Verify Add/Delete User", () => {
+    it("Verify Add/Delete User", () => {
         cy.request({
             method: "POST",
             url: "web/index.php/api/v2/admin/users",
@@ -73,7 +73,15 @@ describe("Sign in", () => {
                 expect(response).property("status").to.equal(200);
             });
         })
-
-        
     });
+
+    it.only('', () => {
+        cy.api({
+            method: "DELETE",
+            url: "web/index.php/api/v2/admin/users",
+            body: {
+                ids: [123]
+            }
+        })
+    })
 });

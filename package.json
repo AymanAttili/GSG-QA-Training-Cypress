@@ -19,5 +19,8 @@
     "mochawesome-merge": "4.1.0",
     "mochawesome-report-generator": "6.0.1",
     "typescript": "5.2.2"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.1"
   }
 }

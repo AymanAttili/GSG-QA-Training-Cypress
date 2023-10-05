@@ -20,7 +20,7 @@ const myTable: table = new table();
 describe('add Employee process', () => {
     beforeEach(() => {
         // visiting orangeHRM website
-        cy.visit("web/index.php/auth/login");
+        cy.visit("https://10fastfingers.com/typing-test/english");
         
         // login
         myLoginPage.login("Admin", "admin123");
