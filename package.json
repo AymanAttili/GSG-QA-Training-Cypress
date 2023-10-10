@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cypress/grep": "^4.0.0",
     "@shelex/cypress-allure-plugin": "^2.40.0",
     "allure-commandline": "^2.24.0",
     "cypress": "12.14.0",

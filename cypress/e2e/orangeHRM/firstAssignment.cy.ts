@@ -60,7 +60,7 @@ describe("Assignment 4", () => {
     });
 
 
-    it("add employee informtion and check", () => {
+    it("add employee informtion and check",{tags: '@smoke'}, () => {
         cy.get("@empInfo").then((infoData: any) => {
             // Checking that the name saved correctly
             cy.intercept(`https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/${infoData.empNumber}`).as('empDetails')
