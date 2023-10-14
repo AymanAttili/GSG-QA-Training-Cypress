@@ -15,8 +15,16 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+<<<<<<< Updated upstream
+=======
+import './utils/apiUtils'
+>>>>>>> Stashed changes
+import '../e2e/conduit/support/API-Helpers/utils/APIUtils'
 import '@shelex/cypress-allure-plugin';
 import 'cypress-plugin-api'
+import '@cypress/grep'
+const registerCypressGrep = require('@cypress/grep')
+registerCypressGrep()
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
