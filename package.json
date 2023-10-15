@@ -6,7 +6,8 @@
   "scripts": {
     "test": "test",
     "allure:report": "allure generate allure-results --clean -o allure-report",
-    "3llawi": "npx cypress run --browser chrome --spec cypress/e2e/orangeHRM/loginFunctionality.cy.ts --env allure=true && npm run allure:report"
+    "3llawi": "npx cypress run --browser chrome --spec cypress/e2e/orangeHRM/loginFunctionality.cy.ts --env allure=true && npm run allure:report",
+    "AhmadMohsen": "npx cypress run --spec cypress/e2e/orangeHRM/loginFunctionality.cy.ts --record --key c2a800fb-8215-4abd-91fe-6338a9183b10"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +15,7 @@
     "@cypress/grep": "^4.0.0",
     "@shelex/cypress-allure-plugin": "^2.40.0",
     "allure-commandline": "^2.24.0",
-    "cypress": "12.14.0",
+    "cypress": "13.3.1",
     "mocha-allure-reporter": "^1.4.0",
     "mochawesome": "7.0.1",
     "mochawesome-merge": "4.1.0",

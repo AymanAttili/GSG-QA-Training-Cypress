@@ -5,3 +5,5 @@ dist/
 coverage/
 .vscode/
 allure-results
+cypress/results
+cypress/screenshots
