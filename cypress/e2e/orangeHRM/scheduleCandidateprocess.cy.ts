@@ -1,7 +1,7 @@
 import addCandidate from "cypress/support/addCandidateHelper";
-import addCandidatePage from "cypress/support/pageObjects/mainPages/addCandidatePage";
-import loginPage from "cypress/support/pageObjects/mainPages/loginPage";
-import scheduleInterviewPage from "cypress/support/pageObjects/mainPages/scheduleInterviewPage";
+import addCandidatePage from "cypress/support/pageObjects/mainPages/AddCandidatePage";
+import loginPage from "cypress/support/pageObjects/mainPages/LoginPage";
+import scheduleInterviewPage from "cypress/support/pageObjects/mainPages/ScheduleInterviewPage";
 
 const myAddCandidate: addCandidate = new addCandidate();
 const myLoginPage: loginPage = new loginPage();

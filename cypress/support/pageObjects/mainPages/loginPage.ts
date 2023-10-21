@@ -1,7 +1,7 @@
-import forgetPage from "./forgetPage";
+import forgetPage from "./ForgetPage";
 
 const myForgetPage = new forgetPage();
-class loginPage{
+class LoginPage{
     elements = {
         userName : () => cy.get('[placeholder="Username"]'),
         password : () => cy.get('[placeholder="Password"]'),
@@ -29,7 +29,10 @@ class loginPage{
         myForgetPage.checkReset();
     }
 
+    logout = () => {
+        return cy.api('GET','https://opensource-demo.orangehrmlive.com/web/index.php/auth/logout',{})
+    }
 
 }
 
-export default loginPage;
+export default LoginPage;

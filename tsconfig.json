@@ -38,7 +38,8 @@
       "cypress",
       "node",
       "@shelex/cypress-allure-plugin",
-      "cypress-plugin-api"
+      "cypress-plugin-api",
+      "cypress-file-upload"
     ],
     // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
     // "moduleSuffixes": [],                             /* List of file name suffixes to search when resolving a module. */

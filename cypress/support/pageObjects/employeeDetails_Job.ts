@@ -1,4 +1,4 @@
-class employeeDetails_Job{
+class EmployeeDetails_Job{
     elements = {
         jobTitle: () => cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text-input'),
         employmentStatus: () => cy.get(':nth-child(7) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text-input'),
@@ -12,4 +12,4 @@ class employeeDetails_Job{
     
 }
 
-export default employeeDetails_Job
+export default EmployeeDetails_Job

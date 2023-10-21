@@ -1,9 +1,10 @@
 {
     "data": {
         "id": 61,
-        "firstName": "3llawi",
+        "firstName": "3llawiii",
         "lastName": "Attili",
         "email": "a@f.com",
-        "vacancyId": 4
+        "resumePath": "cypress/fixtures/cv.pdf",
+        "vacancyId": 92
     }
 }
