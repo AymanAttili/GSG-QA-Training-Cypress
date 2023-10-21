@@ -1,6 +1,6 @@
-import loginPage from "../../support/pageObjects/mainPages/loginPage";
-import employeeSearch from "../../support/pageObjects/subPages/employeeSearch";
-import sidebar from "../../support/pageObjects/subPages/sidebar";
+import loginPage from "../../support/pageObjects/mainPages/LoginPage";
+import employeeSearch from "../../support/pageObjects/subPages/EmployeeSearch";
+import sidebar from "../../support/pageObjects/subPages/Sidebar";
 
 const mySideBar: sidebar = new sidebar();
 const myLoginPage: loginPage= new loginPage();

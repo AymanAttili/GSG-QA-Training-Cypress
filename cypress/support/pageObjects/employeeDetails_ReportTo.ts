@@ -1,4 +1,4 @@
-class employeeDetails_ReportTo{
+class EmployeeDetails_ReportTo{
     elements = {
         supervisor: () => cy.get(':nth-child(2) > .orangehrm-container > .oxd-table > .oxd-table-body > .oxd-table-card > .oxd-table-row > :nth-child(1) > div'),
         addSupervisorBTN: () => cy.get(':nth-child(2) > :nth-child(1) > .orangehrm-action-header > .oxd-button'),
@@ -11,4 +11,4 @@ class employeeDetails_ReportTo{
     
 }
 
-export default employeeDetails_ReportTo
+export default EmployeeDetails_ReportTo

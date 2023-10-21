@@ -1,7 +1,17 @@
-class recruitment_Candidates{
+import table from "../objects/table";
+
+class Recruitment_Candidates{
+
+    private myTable: table = new table();
+    
+    createTable = () => {
+        this.myTable.create(['Vacancy', 'Candidate', 'Hiring Manager', 'Date of Application', 'status']);
+        return this.myTable;
+    }
     elements = {
         CandidatesPageBTN: () => cy.get('.oxd-topbar-body-nav-tab').contains('Candidates'),
-        CandidatesTable: () => cy.get('.oxd-table-body').children()
+        CandidatesTable: () => cy.get('.oxd-table-body').children(),
+        addCandidateBTN: () => cy.get('[type="button"]').contains('Add')
     }
 
     APIs = {
@@ -19,4 +29,4 @@ class recruitment_Candidates{
     }
 }
 
-export default recruitment_Candidates;
+export default Recruitment_Candidates;

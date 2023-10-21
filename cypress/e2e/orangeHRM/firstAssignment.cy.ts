@@ -1,12 +1,12 @@
-import loginPage from "../../support/pageObjects/mainPages/loginPage";
-import sidebar from "../../support/pageObjects/subPages/sidebar";
+import loginPage from "../../support/pageObjects/mainPages/LoginPage";
+import sidebar from "../../support/pageObjects/subPages/Sidebar";
 import PIMPage from "../../support/pageObjects/mainPages/PIMPage";
-import addEmployeePage from "../../support/pageObjects/mainPages/addEmployeePage";
-import employeeDetails_Personal from "../../support/pageObjects/employeeDetails_Personal";
-import employeeDetails_Job from "../../support/pageObjects/employeeDetails_Job";
-import employeeDetails_ReportTo from "../../support/pageObjects/employeeDetails_ReportTo";
-import editEmployeeNavigation from "../../support/pageObjects/subPages/editEmployeeNavigation";
-import employeeSearch from "../../support/pageObjects/subPages/employeeSearch";
+import addEmployeePage from "../../support/pageObjects/mainPages/AddEmployeePage";
+import employeeDetails_Personal from "../../support/pageObjects/EmployeeDetails_Personal";
+import employeeDetails_Job from "../../support/pageObjects/EmployeeDetails_Job";
+import employeeDetails_ReportTo from "../../support/pageObjects/EmployeeDetails_ReportTo";
+import editEmployeeNavigation from "../../support/pageObjects/subPages/EditEmployeeNavigation";
+import employeeSearch from "../../support/pageObjects/subPages/EmployeeSearch";
 import table from "../../support/pageObjects/objects/table";
 
 const myEmployeeDetails_Personal: employeeDetails_Personal = new employeeDetails_Personal();

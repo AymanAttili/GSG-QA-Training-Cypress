@@ -1,4 +1,4 @@
-export default class scheduleInterviewPage{
+export default class ScheduleInterviewPage{
     elements = {
         interviewTitle: () => cy.get(':nth-child(2) > .oxd-grid-3 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input'),
         interviewer: () => cy.get('.oxd-autocomplete-text-input > input'),

@@ -1,7 +1,7 @@
 import resetConfirmation from "./resetConfimation";
 
 const myResetConfirmation = new resetConfirmation();
-class forgetPage{
+class ForgetPage{
     elements={
         userName: ()=> cy.get('[placeholder="Username"]'),
         cancelBTN: ()=> cy.get('.orangehrm-forgot-password-button--cancel'),
@@ -26,4 +26,4 @@ class forgetPage{
     }
 }
 
-export default forgetPage;
+export default ForgetPage;

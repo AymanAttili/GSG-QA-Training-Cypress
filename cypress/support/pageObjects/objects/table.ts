@@ -1,18 +1,20 @@
 class table{
     private columns: Array<string> = new Array;
 
-    create(table:Array<string>){
-        this.columns = table;
+    create(columns:Array<string>){
+        this.columns = columns;
     }
 
-    checkValue(row:number,attr:string,expected:string){
-        this.getcell(row,attr).should('have.text',expected);
-    }
-
-    getcell(row:number,attr:string){
+    async checkValue(row:number,attr:string,expected:any){
         let ind = this.columns.indexOf(attr);
-        return cy.get(`div.oxd-table-body > div:nth-child(${row}) > div > div:nth-child(${ind+1})`);
+        
+        cy.get(`div.oxd-table-body > div:nth-child(${row}) > div > div:nth-child(${ind+2}) > div`).then(($el) => {
+            const text = $el[0].innerText
+            return text == expected
+        });
+        
     }
+
 }
 
 export default table;

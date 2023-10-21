@@ -4,7 +4,7 @@ export default class candidateInit{
     static initCandidate(data: any): addCandidatePayload {
         return {
             firstName: data.firstName,
-            middleName: data.lastName,
+            middleName: data.middleName,
             lastName: data.lastName,
             email: data.email,
             contactNumber: data.contactNumber,

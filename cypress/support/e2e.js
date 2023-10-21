@@ -22,6 +22,7 @@ import 'cypress-plugin-api'
 import '@cypress/grep'
 const registerCypressGrep = require('@cypress/grep')
 registerCypressGrep()
+import 'cypress-file-upload';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
