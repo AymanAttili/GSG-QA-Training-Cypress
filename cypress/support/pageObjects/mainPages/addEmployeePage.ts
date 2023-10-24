@@ -53,7 +53,7 @@ class AddEmployeePage{
                 method: 'POST',
                 url: this.urls.users,
                 body:{
-                    username: empData.username,
+                    username: empData.username+GenericFunctions.genericRandomNumber(1000),
                     password: empData.password,
                     status: true,
                     userRoleId: 2,

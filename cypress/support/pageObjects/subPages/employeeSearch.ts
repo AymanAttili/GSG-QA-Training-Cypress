@@ -1,6 +1,6 @@
 import keyVal from "../../../e2e/interfaces/keyVal";
 
-class employeeSearch{
+class EmployeeSearch{
     elements = {
         employeeName: () => cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-autocomplete-wrapper > .oxd-autocomplete-text-input > input'),
         employeeId: () => cy.get(':nth-child(2) > .oxd-input'),
@@ -21,4 +21,4 @@ class employeeSearch{
     }
 }
 
-export default employeeSearch;
+export default EmployeeSearch;

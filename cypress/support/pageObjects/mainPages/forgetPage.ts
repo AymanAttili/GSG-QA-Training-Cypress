@@ -1,4 +1,4 @@
-import resetConfirmation from "./resetConfimation";
+import resetConfirmation from "./ResetConfimation";
 
 const myResetConfirmation = new resetConfirmation();
 class ForgetPage{
