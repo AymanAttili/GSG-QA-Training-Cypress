@@ -1,6 +1,6 @@
-import table from "../objects/table";
+import table from "../../objects/table";
 
-class Recruitment_Candidates{
+class Candidates{
 
     private myTable: table = new table();
     
@@ -29,4 +29,4 @@ class Recruitment_Candidates{
     }
 }
 
-export default Recruitment_Candidates;
+export default Candidates;

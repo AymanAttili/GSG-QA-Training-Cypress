@@ -1,6 +1,6 @@
-import resetConfirmation from "./ResetConfimation";
+import ResetConfirmation from "./ResetConfimation";
 
-const myResetConfirmation = new resetConfirmation();
+const myResetConfirmation = new ResetConfirmation();
 class ForgetPage{
     elements={
         userName: ()=> cy.get('[placeholder="Username"]'),

@@ -24,6 +24,7 @@
     "typescript": "5.2.2"
   },
   "dependencies": {
-    "cypress-plugin-api": "^2.11.1"
+    "cypress-plugin-api": "^2.11.1",
+    "xlsx": "^0.18.5"
   }
 }

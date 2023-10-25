@@ -1,4 +1,4 @@
-import recruitment_Candidates from "cypress/support/pageObjects/mainPages/Recruitment_Candidates";
+import recruitment_Candidates from "cypress/support/pageObjects/mainPages/Recruitment/Candidates";
 import loginPage from "../../support/pageObjects/mainPages/LoginPage";
 import sidebar from "../../support/pageObjects/subPages/Sidebar";
 import addCandidate from "cypress/support/addCandidateHelper";
@@ -39,20 +39,20 @@ describe('recruitment pages test', () => {
 
                 const myTable = myRecruitment_CandidatesPage.createTable();
                 
-                for(let i=1 ; i<=expectedLength ; i++){
-                    const has = await myTable.checkValue(i,'Candidate', Cdata.data.firstName + ' ' + Cdata.data.lastName)
-                    console.log(has);
-                    if(has){
-                        console.log('true');
-                    }
-                    else{
-                        console.log(false);
-                    }
+                // for(let i=1 ; i<=expectedLength ; i++){
+                //     const has = await myTable.checkValue(i,'Candidate', Cdata.data.firstName + ' ' + Cdata.data.lastName)
+                //     console.log(has);
+                //     if(has){
+                //         console.log('true');
+                //     }
+                //     else{
+                //         console.log(false);
+                //     }
                     
                         
 
                     
-                }
+                // }
             })
         })
 
