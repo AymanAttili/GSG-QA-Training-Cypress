@@ -1,9 +1,9 @@
 import addCandidatePage from "cypress/support/pageObjects/mainPages/AddCandidatePage";
 import loginPage from "cypress/support/pageObjects/mainPages/LoginPage";
-import recruitment_Candidates from "cypress/support/pageObjects/mainPages/Recruitment_Candidates";
+import Candidates from "cypress/support/pageObjects/mainPages/Recruitment/Candidates";
 import sidebar from "cypress/support/pageObjects/subPages/Sidebar";
 
-const myRecruitment_Candidates: recruitment_Candidates = new recruitment_Candidates();
+const myRecruitment_Candidates: Candidates = new Candidates();
 const myaddCandidatePage: addCandidatePage = new addCandidatePage();
 const mySideBar: sidebar = new sidebar();
 const myLoginPage: loginPage = new loginPage();
