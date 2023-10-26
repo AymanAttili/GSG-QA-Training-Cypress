@@ -3,5 +3,20 @@
     "middleName": "Layth",
     "lastName": "7abibGalbi",
     "username": "3llawii",
-    "password": "admin123"
+    "password": "admin123",
+    "entitlementInfo": {
+        "leaveTypeId": 6,
+        "entitlement": 6,
+        "fromDate": "2023-01-01",
+        "toDate": "2023-12-31"
+    },
+    "leaveInfo": {
+        "leaveTypeId": 6,
+        "fromDate": "2023-12-29",
+        "toDate": "2023-12-29",
+        "comment": null,
+        "duration": {
+            "type": "full_day"
+        }
+    }
 }
