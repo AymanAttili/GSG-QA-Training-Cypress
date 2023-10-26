@@ -11,6 +11,10 @@ class table{
         return cy.get(`div.oxd-table-body > div:nth-child(${row}) > div > div:nth-child(${ind+2}) > div`)
     }
 
+    checkValue(row: number, attr: string, expected: any){
+        this.getCell(row, attr).should('contain.text', expected);
+    }
+
 }
 
 export default table;

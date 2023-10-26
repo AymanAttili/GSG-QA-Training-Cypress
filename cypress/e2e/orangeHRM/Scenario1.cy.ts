@@ -81,7 +81,7 @@ describe('Scenario1', () => {
 
             // Then The leave should exist in the records table with status Scheduled
             const myTable:table = my_MyLeavePage.createTable();
-            myTable.getCell(1,'Status').should('contain.text', 'Scheduled');
+            myTable.checkValue(1,'Status','Scheduled')
 
         })
         
