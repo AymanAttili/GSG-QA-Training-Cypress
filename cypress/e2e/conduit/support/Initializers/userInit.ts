@@ -1,5 +1,5 @@
 import { userAPIPayload } from "../API-Helpers/payloads/userAPIPayload";
-import genericFunctions from "../genericFunctions";
+import genericFunctions from "../GenericFunctions";
 
 export default class userInit{
     static initUser(): userAPIPayload {
