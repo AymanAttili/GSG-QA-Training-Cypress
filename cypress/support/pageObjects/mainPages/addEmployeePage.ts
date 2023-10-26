@@ -1,4 +1,4 @@
-import GenericFunctions from "cypress/e2e/conduit/support/genericFunctions";
+import GenericFunctions from "cypress/e2e/conduit/support/GenericFunctions";
 
 class AddEmployeePage{
     elements = {
