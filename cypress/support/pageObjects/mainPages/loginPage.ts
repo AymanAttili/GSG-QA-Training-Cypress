@@ -30,7 +30,9 @@ class LoginPage{
     }
 
     logout = () => {
-        return cy.api('GET','https://opensource-demo.orangehrmlive.com/web/index.php/auth/logout',{})
+        cy.api('GET','https://opensource-demo.orangehrmlive.com/web/index.php/auth/logout',{})
+        cy.clearCookies()
+        cy.visit('/');
     }
 
 }

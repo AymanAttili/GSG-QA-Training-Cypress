@@ -1,4 +1,4 @@
-import GenericFunctions from "cypress/e2e/conduit/support/GenericFunctions";
+import GenericFunctions from "cypress/e2e/conduit/support/genericFunctions";
 
 class AddEmployeePage{
     elements = {
@@ -13,7 +13,7 @@ class AddEmployeePage{
         password: () => cy.get('.user-password-cell > .oxd-input-group > :nth-child(2) > .oxd-input'),
         confirmPassword: () => cy.get('.oxd-grid-2 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input')
     }
-
+    
     urls = {
         employees: 'https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/pim/employees',
         users: 'https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/admin/users'
@@ -46,6 +46,8 @@ class AddEmployeePage{
     }
 
     addWithLoginViaAPI = (empData:any) => { // payload interface have to be added
+        empData.username += GenericFunctions.genericRandomNumber()
+        cy.log(empData.userName)
         return this.addViaAPI(empData).then((res) => {
             const empNo = res.body.data.empNumber
             console.log(empNo)
