@@ -2,7 +2,7 @@
     "firstName": "3llawi",
     "middleName": "Layth",
     "lastName": "7abibGalbi",
-    "username": "3llawii",
+    "username": "3llawi",
     "password": "admin123",
     "entitlementInfo": {
         "leaveTypeId": 6,
@@ -18,5 +18,20 @@
         "duration": {
             "type": "full_day"
         }
+    },
+    "timesheets": {
+        "entries": [
+            {
+                "projectId": 2,
+                "activityId": 11,
+                "dates": {
+                    "2023-10-23": {
+                        "duration": "09:00"
+                    }
+                }
+            }
+        ],
+        "deletedeEntries": [],
+        "id": 1
     }
 }
