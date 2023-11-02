@@ -2,6 +2,36 @@
     "firstName": "3llawi",
     "middleName": "Layth",
     "lastName": "7abibGalbi",
-    "username": "3llawii",
-    "password": "admin123"
+    "username": "3llawi",
+    "password": "admin123",
+    "entitlementInfo": {
+        "leaveTypeId": 6,
+        "entitlement": 6,
+        "fromDate": "2023-01-01",
+        "toDate": "2023-12-31"
+    },
+    "leaveInfo": {
+        "leaveTypeId": 6,
+        "fromDate": "2023-12-29",
+        "toDate": "2023-12-29",
+        "comment": null,
+        "duration": {
+            "type": "full_day"
+        }
+    },
+    "timesheets": {
+        "entries": [
+            {
+                "projectId": 2,
+                "activityId": 11,
+                "dates": {
+                    "2023-10-23": {
+                        "duration": "09:00"
+                    }
+                }
+            }
+        ],
+        "deletedeEntries": [],
+        "id": 1
+    }
 }

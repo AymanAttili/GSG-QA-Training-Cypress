@@ -1,4 +1,4 @@
-import GenericFunctions from "cypress/e2e/conduit/support/genericFunctions";
+import GenericFunctions from "cypress/e2e/conduit/support/GenericFunctions";
 
 class AddEmployeePage{
     elements = {
@@ -15,20 +15,31 @@ class AddEmployeePage{
     }
     
     urls = {
-        employees: 'https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/pim/employees',
-        users: 'https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/admin/users'
+        employees: '/web/index.php/api/v2/pim/employees',
+        users: '/web/index.php/api/v2/admin/users'
     }
 
 
-    addWithLogin = (firstName: string, middleName: string, lastName: string, userName: string, password: string) => {
-        this.elements.firstName().type(firstName);
-        this.elements.middleName().type(middleName);
-        this.elements.lastName().type(lastName);
-        this.elements.loginDetailsSwitch().click();
-        this.elements.userName().type(userName);
-        this.elements.password().type(password);
-        this.elements.confirmPassword().type(password);
-        this.elements.saveBTN().click();
+    addWithLogin = (firstName: string, middleName: string, lastName: string, userName: string, password: string) => {        
+        this.actions.enterFirstName(firstName);
+        this.actions.enterMiddleName(middleName);
+        this.actions.enterLastName(lastName);
+        this.actions.addLoginSwitch();
+        this.actions.enterUsername(userName);
+        this.actions.enterPassword(password);
+        this.actions.enterConfirmPassword(password);
+        this.actions.clickSaveBTN();
+    }
+
+    actions = {
+        enterFirstName: (firstName: string) => this.elements.firstName().type(firstName),
+        enterMiddleName: (middleName: string) => this.elements.middleName().type(middleName),
+        enterLastName: (lastName: string) => this.elements.lastName().type(lastName),
+        addLoginSwitch: () => this.elements.loginDetailsSwitch().click(),
+        enterUsername: (userName: string) => this.elements.userName().type(userName),
+        enterPassword: (password: string) => this.elements.password().type(password),
+        enterConfirmPassword: (password: string) => this.elements.confirmPassword().type(password),
+        clickSaveBTN: () => this.elements.saveBTN().click()
     }
 
     addViaAPI = (empData:any) => { // payload interface have to be added
@@ -46,8 +57,6 @@ class AddEmployeePage{
     }
 
     addWithLoginViaAPI = (empData:any) => { // payload interface have to be added
-        empData.username += GenericFunctions.genericRandomNumber()
-        cy.log(empData.userName)
         return this.addViaAPI(empData).then((res) => {
             const empNo = res.body.data.empNumber
             console.log(empNo)
@@ -55,7 +64,7 @@ class AddEmployeePage{
                 method: 'POST',
                 url: this.urls.users,
                 body:{
-                    username: empData.username+GenericFunctions.genericRandomNumber(1000),
+                    username: empData.username,
                     password: empData.password,
                     status: true,
                     userRoleId: 2,
